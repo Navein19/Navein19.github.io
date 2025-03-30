@@ -1,139 +1,1113 @@
 <!DOCTYPE HTML>
+<html lang="en">
 
-<html>
-	<head>
-		<title>Navein's Port-Folio!!!</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<head>
+    <title>Navein Kumar | Software Engineer</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        /* Global Styles */
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1e40af;
+            --secondary: #3b82f6;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --gray: #64748b;
+            --light-gray: #e2e8f0;
+        }
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Hello World!!! </br> NAVEIN here
-						</h1>
-						<p>An enthusiastic IT grad, with a profession of revolutionising the IT indsutry through cutting edge technologies.</br>The site presents you my portfolio :) </p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+        html {
+            scroll-behavior: smooth;
+        }
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">navein kumar</a>
-					</header>
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">About</a></li>
-							<li><a href="projects.html">Projects</a></li>
-							
-							
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/navein-kumar-2655a8134/" class="icon brands fa fa-linkedin"><span class="label">Linkdin</span></a></li>
-							<li><a href="https://www.facebook.com/navein.kumar.94" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="https://www.instagram.com/being_navein/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="https://github.com/Navein19" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+        a {
+            text-decoration: none;
+            color: var(--primary);
+            transition: all 0.3s ease;
+        }
 
-				<!-- Main -->
-					<div id="main">
+        a:hover {
+            color: var(--primary-dark);
+        }
 
-						<!-- Post -->
-							<section class="post">
-								<header class="major">
-									<span class="date">Existence Since May 19, 2000</span>
-									<h1>‟the best way to predict the future is to create it !!!”</h1>
-									<p>The following picture copyrights is owned by <i>Mr.S.Navein Kumar</i> the author of this page 😅</p>
-								</header>
-								<div class="image main"><img src="images/dp.jpg" alt="" /></div>
-								<p>Hi folks, this paragraph is going to be about my basic stuff. If you want to flee from it, then skip to the next para. I am an Indian citizen with Chennai, Tamil Nadu, as my home town. I have done my 12th grade at Chennai Public School, having Computer Science as my background. Telugu being my mother tongue, I am also well-versed in speaking and writing in Tamil and English. Just like a typical engineering aspirant, I dreamt of joining IIT's and NIT's, which eventually ended up being appended to my stack of failures. However, my passion for learning computer science made me pursue my bachelor's in "Information Technology" at SSN College of Engineering.  I was 2021 passed out student. I am currently working as a software development engineer at PayPal.</p>
-								<p>After computers, the next thing that captivates me a lot would be movies and cinema. I am a big fan of "Ajith Kumar", an actor popularly known as "Thala" in the Kollywood industry. The above statement reflects my nature as a movie buff. If I had to describe myself in terms of nature, I would say that Navein Kumar is a person who opts to be in a small but very healthy and truthful friendship circle. Also, he has a strong gravitational pull towards humour.  </p>
-								<p>On the technical side, I was always excited when I heard the fancy term "Machine Learning" from the voice of Sundar Pichai, CEO of Google, in his interviews and seminars on Google's I/O. On the other hand, when I came to know about the outcomes and viability of this so-called domain "Machine Learning", I was totally astonished. How can a machine automate everything that a human can do while also outperforming its creators? This acted as the driving factor to get my hands dirty on this domain. I define machine learning as "the way or method that the programmer chooses to teach the machines." The more creative the method, the more accurate the machines. I started my dream of being a machine learning engineer when I was given a chance to work as a data science intern at Nokia PVT LTD. This platform gave me enough exposure to get familiar with the domain and work on various industrial projects assigned to me. After graduating from college, PayPal created a space for me to explore some of their business projects, which required me to master various essential skills as a software developer. This experience taught me to seek out opportunities to broaden my knowledge of computer science. My love for computers and learning to master them is a never-ending story....</p>
+        ul {
+            list-style: none;
+        }
 
-								<p><b>Certifications</b>
-								<ul>
-    <li><a href="https://www.coursera.org/account/accomplishments/certificate/ELBBH3CLGS7B">Certified for Convolutional Neural Networks by Deeplearning.ai (98%).</a></li>
-    <li><a href="https://www.coursera.org/account/accomplishments/certificate/2ZG2Y7CLPB3D">Certified for Machine Learning by STANFORD University (95%).</a></li>
-    <li><a href="your_link3">Certified for JAVA, C++, C by NIIT.</a></li>
-</ul>
-								</p>
- 							</section>
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
 
-					</div>
+        .section {
+            padding: 100px 0;
+        }
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section>
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>6/21 GH Housing Door No 402<br />
-								Ayanavaram Chennai 23</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p>(+91) 9080667377</p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p>naveindhawan@gmail.com</p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/navein-kumar-2655a8134/" class="icon brands fa fa-linkedin"><span class="label">Linkdin</span></a></li>
-							<li><a href="https://www.facebook.com/navein.kumar.94" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="https://www.instagram.com/being_navein/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="https://github.com/Navein19" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 2.5rem;
+            color: var(--dark);
+            position: relative;
+        }
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary);
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
 
-			</div>
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        .btn-small {
+            display: inline-block;
+            padding: 6px 15px;
+            /* reduced padding */
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background-color: var(--primary);
+            color: var(--light);
+        }
 
-	</body>
+        .btn-primary {
+            background-color: var(--primary);
+            color: var(--light);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            color: var(--light);
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--dark);
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            color: var(--dark);
+            font-weight: 600;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary);
+            bottom: -5px;
+            left: 0;
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(37, 99, 235, 0.1) 100%);
+        }
+
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .hero-text {
+            flex: 1;
+            padding-right: 50px;
+        }
+
+        .hero-text h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+
+        .hero-text h1 span {
+            color: var(--primary);
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: var(--gray);
+        }
+
+        .hero-img {
+            flex: 1;
+            text-align: center;
+        }
+
+        .hero-img img {
+            width: 350px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border: 5px solid var(--light);
+        }
+
+        .hero-social {
+            display: flex;
+            margin-top: 30px;
+        }
+
+        .hero-social a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background-color: var(--light);
+            border-radius: 50%;
+            margin-right: 15px;
+            color: var(--primary);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .hero-social a:hover {
+            background-color: var(--primary);
+            color: var(--light);
+            transform: translateY(-3px);
+        }
+
+        /* About Section */
+        .about {
+            background-color: var(--light);
+        }
+
+        .about-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .about-text {
+            flex: 1;
+            padding-right: 50px;
+        }
+
+        .about-text h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+
+        .about-text p {
+            margin-bottom: 15px;
+            color: var(--gray);
+        }
+
+        .about-info {
+            margin-top: 30px;
+        }
+
+        .info-item {
+            display: flex;
+            margin-bottom: 15px;
+        }
+
+        .info-title {
+            width: 130px;
+            font-weight: 600;
+            color: var(--dark);
+        }
+
+        .info-value {
+            color: var(--gray);
+        }
+
+        .skills {
+            flex: 1;
+        }
+
+        .skill-category {
+            margin-bottom: 25px;
+        }
+
+        .skill-category h4 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .skill-tag {
+            background-color: var(--light-gray);
+            padding: 8px 15px;
+            border-radius: 5px;
+            margin: 0 10px 10px 0;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--dark);
+        }
+
+        /* Projects Section */
+        .projects {
+            background-color: var(--light-gray);
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background-color: var(--light);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .project-img {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .project-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover .project-img img {
+            transform: scale(1.1);
+        }
+
+        .project-content {
+            padding: 20px;
+        }
+
+        .project-title {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--dark);
+        }
+
+        .project-date {
+            display: inline-block;
+            background-color: var(--primary);
+            color: var(--light);
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 0.8rem;
+            margin-bottom: 15px;
+        }
+
+        .project-desc {
+            color: var(--gray);
+            margin-bottom: 20px;
+        }
+
+        .project-link {
+            text-align: right;
+        }
+
+        /* Education & Experience */
+        .education-experience {
+            background-color: var(--light);
+        }
+
+        .timeline-container {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .timeline-container::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            background-color: var(--light-gray);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1px;
+        }
+
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            background-color: var(--light);
+            border: 4px solid var(--primary);
+            border-radius: 50%;
+            top: 15px;
+            z-index: 1;
+        }
+
+        .timeline-left {
+            left: 0;
+            text-align: right;
+        }
+
+        .timeline-right {
+            left: 50%;
+            text-align: left;
+        }
+
+        .timeline-left::after {
+            right: -8px;
+        }
+
+        .timeline-right::after {
+            left: -8px;
+        }
+
+        .timeline-content {
+            padding: 20px;
+            background-color: var(--light);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .timeline-year {
+            display: inline-block;
+            background-color: var(--primary);
+            color: var(--light);
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+        }
+
+        .timeline-title {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+            color: var(--dark);
+        }
+
+        .timeline-place {
+            font-style: italic;
+            color: var(--gray);
+            margin-bottom: 10px;
+        }
+
+        .timeline-description {
+            color: var(--gray);
+        }
+
+        /* Certifications */
+        .certifications {
+            background-color: var(--light-gray);
+        }
+
+        .cert-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .cert-item {
+            background-color: var(--light);
+            border-radius: 10px;
+            padding: 20px;
+            width: calc(33.333% - 20px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .cert-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .cert-icon {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .cert-title {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: var(--dark);
+        }
+
+        .cert-issuer {
+            font-style: italic;
+            color: var(--gray);
+            margin-bottom: 15px;
+        }
+
+        .cert-link {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        /* Contact */
+        .contact {
+            background-color: var(--light);
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 50px;
+        }
+
+        .contact-info {
+            flex: 1;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+            color: var(--light);
+            font-size: 1.2rem;
+        }
+
+        .contact-details h4 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+            color: var(--dark);
+        }
+
+        .contact-details p {
+            color: var(--gray);
+        }
+
+        .social-links {
+            display: flex;
+            margin-top: 40px;
+        }
+
+        .social-links a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 45px;
+            height: 45px;
+            background-color: var(--light-gray);
+            border-radius: 50%;
+            margin-right: 15px;
+            color: var(--primary);
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: var(--primary);
+            color: var(--light);
+            transform: translateY(-3px);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: var(--light);
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            color: var(--light);
+            margin: 0 15px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        .footer-text {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .section {
+                padding: 80px 0;
+            }
+
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-text {
+                padding-right: 0;
+                margin-bottom: 50px;
+            }
+
+            .hero-social {
+                justify-content: center;
+            }
+
+            .about-content {
+                flex-direction: column;
+            }
+
+            .about-text {
+                padding-right: 0;
+                margin-bottom: 50px;
+            }
+
+            .cert-item {
+                width: calc(50% - 20px);
+            }
+
+            .contact-container {
+                flex-direction: column;
+            }
+
+            .timeline-container::after {
+                left: 31px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+
+            .timeline-left,
+            .timeline-right {
+                left: 0;
+                text-align: left;
+            }
+
+            .timeline-left::after,
+            .timeline-right::after {
+                left: 15px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cert-item {
+                width: 100%;
+            }
+        }
+
+        .resume-btn {
+            background-color: #4f46e5;
+            color: white;
+            padding: 12px 24px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .resume-btn:hover {
+            background-color: #4338ca;
+        }
+
+        .resume-modal {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.75);
+            animation: fadeIn 0.4s ease;
+        }
+
+        .resume-modal-content {
+            margin: 5% auto;
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            width: 90%;
+            max-width: 900px;
+            animation: slideUp 0.4s ease;
+        }
+
+        .close {
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(40px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">Navein Kumar<span> Sridhar</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#" id="resumeNavLink">Resume</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Hello, I'm <span>Navein</span></h1>
+                <p>I build cool full-stack stuff, teach machines to see (hello, computer vision), and toss in some data
+                    spice when needed. When I’m not coding, I’m off hiking, traveling, or editing the moments I capture
+                    — AWS Certified DevOps Engineer and a proud Sun Devil 🔱 with a Master’s in Computer Science from
+                    ASU.</p>
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <div class="hero-social">
+                    <a href="https://www.linkedin.com/in/navein-kumar-2655a8134/" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Navein19" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:naveindhawan@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></i></a>
+                </div>
+            </div>
+            <div class="hero-img">
+                <img src="./assets/IMG_2473.jpg" alt="Navein Kumar">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Full-Stack & DevOps Engineer | Data Engineer | Computer Vision Enthusiast</h3>
+                    <p>I’m a full-stack engineer with a passion for building scalable systems that solve real-world
+                        problems. From developing Spring-based microservices to crafting dynamic frontends with React
+                        and Preact, I enjoy owning features end-to-end. My strength lies in designing backend
+                        architectures that are robust, observable, and efficient — whether it’s reducing latency in rule
+                        engines or building secure authentication flows.</p>
+                    <p>I’ve worked across diverse data ecosystems, extracting business insights using BigQuery,
+                        Snowflake, and Oracle, and integrating with NoSQL stores like Cassandra and MongoDB. My approach
+                        to data is pragmatic — from ETL pipelines to real-time analytics, I care about what drives
+                        impact. I’m also experienced in observability, using tools like Splunk, Kibana, and Tableau to
+                        keep systems transparent and measurable.</p>
+                    <p>At PayPal, I led initiatives that enhanced user security and saved millions by optimizing
+                        internal tools. My exposure to DevOps, containerization, and CI/CD pipelines keeps me grounded
+                        in delivery and reliability. Earlier at Nokia, I dabbled in computer vision, building
+                        lightweight models for industrial use cases.</p>
+                    <p>I also published research on speaker identification using recurrence plots in Scientific Reports,
+                        pushing the boundaries of audio-based deep learning models. For me, great engineering is part
+                        code, part clarity — and I love being in the zone where both meet.</p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <div class="info-title">Location:</div>
+                            <div class="info-value">Tempe, Arizona, USA</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-title">Email:</div>
+                            <div class="info-value">nsridh10@asu.edu</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="skill-category">
+                        <h4>Programming Languages</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">C/C++</span>
+                            <span class="skill-tag">Golang</span>
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">C#</span>
+                            <span class="skill-tag">R</span>
+                            <span class="skill-tag">Kotlin</span>
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">XML</span>
+                            <span class="skill-tag">JSON</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Frameworks & Libraries</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Spring</span>
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">Keras</span>
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">FastAPI</span>
+                            <span class="skill-tag">Express</span>
+                            <span class="skill-tag">CNN</span>
+                            <span class="skill-tag">OpenCV</span>
+                            <span class="skill-tag">NLP</span>
+                            <span class="skill-tag">Airflow</span>
+                            <span class="skill-tag">ETL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Tools & Technologies</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag">Jenkins</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Kafka</span>
+                            <span class="skill-tag">BigQuery</span>
+                            <span class="skill-tag">Splunk</span>
+                            <span class="skill-tag">Tableau</span>
+                            <span class="skill-tag">Firebase</span>
+                            <span class="skill-tag">Android Studio</span>
+                            <span class="skill-tag">Azure</span>
+                            <span class="skill-tag">Linux</span>
+                            <span class="skill-tag">Jira</span>
+                            <span class="skill-tag">CI/CD</span>
+                            <span class="skill-tag">DevOps</span>
+                            <span class="skill-tag">BPMN.io</span>
+                            <span class="skill-tag">SCM</span>
+                            <span class="skill-tag">Rest APIs</span>
+                            <span class="skill-tag">CUDA</span>
+                            <span class="skill-tag">Spark</span>
+                            <span class="skill-tag">Oracle</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">NoSQL</span>
+                            <span class="skill-tag">Maven</span>
+                            <span class="skill-tag">ES6</span>
+                            <span class="skill-tag">Lucene</span>
+                            <span class="skill-tag">Cypress</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="./assets/speaker.png" alt="Speaker Identification">
+                    </div>
+                    <div class="project-content">
+                        <span class="project-date">Research Publication</span>
+                        <h3 class="project-title">Speaker Identification Using Recurrence Plots</h3>
+                        <p class="project-desc">This project leverages Recurrent Plot (RP) embeddings as nonlinear
+                            features for speaker recognition, capturing unique vocal tract dynamics across air, bone,
+                            and throat microphones. It demonstrates the effectiveness of RP embeddings in unimodal,
+                            bimodal, and trimodal systems, highlighting their potential for both speaker and speech
+                            recognition applications.</p>
+                        <div class="project-link">
+                            <a href="https://www.nature.com/articles/s41598-024-62406-3"
+                                class="btn-small">Scientific Reports</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="./assets/xv6.png" alt="RISC-V-xv6-OS">
+                    </div>
+                    <div class="project-content">
+                        <span class="project-date">August 2024 - January 2025 (ASU Academic)</span>
+                        <h3 class="project-title">RISC-V-xv6-OS</h3>
+                        <p class="project-desc">Developed a custom xv6 RISC-V OS on QEMU, implementing secure boot with
+                            kernel hash checks, memory protection using PMP, and virtualization through
+                            trap-and-emulate. Integrated copy-on-write for process forking followed by lazy and on-demand memory allocation, and built
+                            complete modules for process scheduling and memory management, focusing on system isolation,
+                            performance, and security from the ground up. </p>
+                        <div class="project-link">
+                            <a href="https://github.com/Navein19/RISC-V-xv6-Operating-System"
+                                class="btn-small">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="./assets/iot.png" alt="IoT Data Management">
+                    </div>
+                    <div class="project-content">
+                        <span class="project-date">September 2024 - December 2024 (ASU Academic)</span>
+                        <h3 class="project-title">IoT Data Management and Query Optimization</h3>
+                        <p class="project-desc">Built a scalable pipeline for automobile IoT sensor data using Kafka,
+                            Cassandra, and Kafka Streams. Optimized storage with partitioning, predicate pushdown, and
+                            PostgreSQL-to-Cassandra migration. Enabled efficient query plans and real-time insights via
+                            a FastAPI backend. Developed a React-based dashboard for visualizing metrics, alerts, and
+                            sensor data severity patterns.</p>
+                        <div class="project-link">
+                            <a href="https://github.com/tssanjai98/CSE512-iot-data-managment"
+                                class="btn-small">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- PocDoc Project -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="./assets/pocdoc.jpg" alt="PocDoc">
+                    </div>
+                    <div class="project-content">
+                        <span class="project-date">December 2019 - March 2020 (Personal Project)</span>
+                        <h3 class="project-title">PocDoc - Pocket Doctor</h3>
+                        <p class="project-desc">Designed an AI-driven Android app using tensorflow lite to make healthcare accessible on the go. Features include a virtual medical assistant, disease prediction from blood test inputs, hospital locator, smart health alerts, and emergency support. Aims to empower users with instant, intelligent medical guidance, preventive care, and real-time doctor connectivity anytime, anywhere powered by quickblox API. </p>
+                        <div class="project-link">
+                            <a href="https://github.com/Navein19/PocDoc" class="btn-small">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ShoppingEasy Project -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="./assets/Shopping Easy.png" alt="ShoppingEasy">
+                    </div>
+                    <div class="project-content">
+                        <span class="project-date"> March 2019 (RAMCO Hackathon)</span>
+                        <h3 class="project-title">ShoppingEasy</h3>
+                        <p class="project-desc">Designed a location-aware retail app that streamlines customer journeys via smart notifications, QR-based store check-ins, and contactless payments. Enabled vendor onboarding and real-time personalization. Integrated BigQuery for analytics and Airflow for ETL automation. Reduced checkout friction and wait times, offering a seamless experience from entry to exit through intelligent automation and customer-vendor interface integration.</p>
+                        <div class="project-link">
+                            <a href="https://github.com/Navein19/ShoppingEasy" class="btn-small">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="./assets/pattern.jpg" alt="Pattern Tracking">
+                    </div>
+                    <div class="project-content">
+                        <span class="project-date">May 2019 - March 2020 (Nokia)</span>
+                        <h3 class="project-title">Pattern Tracking for Industrial Screwing</h3>
+                        <p class="project-desc"> Led a student team to develop a deep learning-based computer vision
+                            application for tracking screwing patterns in manufacturing using OpenCV . Employed a CNN
+                            trained on MNIST for number recognition and created a Python QR-based alternative, achieving
+                            100% accuracy in error detection. Deployed the application using Kubernetes for efficient
+                            scaling.</p>
+                        <div class="project-link">
+                            <a href="https://github.com/Navein19/Pattern-Matching-Algorithm"
+                                class="btn-small">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="./assets/anomaly.jpg" alt="Product Anomaly Detector">
+                    </div>
+                    <div class="project-content">
+                        <span class="project-date">May 2019 - March 2020 (Nokia)</span>
+                        <h3 class="project-title">Product Anomaly Detector</h3>
+                        <p class="project-desc">Pioneered a state-of-the-art video processing (computer vision) solution
+                            using TensorFlow's SSD MobileNet for lightweight object detection (powered by TensorFlow's
+                            object detection API). Applied scikit-image for image processing and Keras for data
+                            augmentation, followed by transfer learning (trained on COCO dataset) achieving a 94%
+                            reduction in manufacturing faults like improper screwing and board misfit.</p>
+                        <div class="project-link">
+                            <a href="https://github.com/Navein19/Video-Analytics-for-Manufacturing-Anamolies"
+                                class="btn-small">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="resumeModal" class="resume-modal">
+        <div class="resume-modal-content">
+            <span class="close">&times;</span>
+            <iframe src="./assets/Navein Resume.pdf" width="100%" height="600px"></iframe>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#resume">Resume</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p class="footer-text">© 2025 Navein Kumar Sridhar. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const modal = document.getElementById("resumeModal");
+        const closeBtn = document.querySelector(".close");
+        const navLink = document.getElementById("resumeNavLink");
+
+        navLink.onclick = function (e) {
+            e.preventDefault();
+            modal.style.display = "block";
+        };
+
+        closeBtn.onclick = function () {
+            modal.style.display = "none";
+        };
+
+        window.onclick = function (event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        };
+    });
+</script>
+
+
 </html>
