@@ -643,6 +643,16 @@
                 padding: 80px 0;
             }
 
+            .hero {
+                padding-top: 80px;
+                /* space for the fixed header */
+                height: calc(100vh - 80px);
+                /* adjust hero height accordingly */
+                display: flex;
+                align-items: center;
+                background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(37, 99, 235, 0.1) 100%);
+            }
+
             .hero-content {
                 flex-direction: column;
                 text-align: center;
@@ -792,7 +802,7 @@
     <header>
         <div class="container header-container">
             <a href="#" class="logo">Navein Kumar<span> Sridhar</span></a>
-            <ul class="nav-links">
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -955,8 +965,8 @@
                             bimodal, and trimodal systems, highlighting their potential for both speaker and speech
                             recognition applications.</p>
                         <div class="project-link">
-                            <a href="https://www.nature.com/articles/s41598-024-62406-3"
-                                class="btn-small">Scientific Reports</a>
+                            <a href="https://www.nature.com/articles/s41598-024-62406-3" class="btn-small">Scientific
+                                Reports</a>
                         </div>
                     </div>
                 </div>
@@ -969,7 +979,8 @@
                         <h3 class="project-title">RISC-V-xv6-OS</h3>
                         <p class="project-desc">Developed a custom xv6 RISC-V OS on QEMU, implementing secure boot with
                             kernel hash checks, memory protection using PMP, and virtualization through
-                            trap-and-emulate. Integrated copy-on-write for process forking followed by lazy and on-demand memory allocation, and built
+                            trap-and-emulate. Integrated copy-on-write for process forking followed by lazy and
+                            on-demand memory allocation, and built
                             complete modules for process scheduling and memory management, focusing on system isolation,
                             performance, and security from the ground up. </p>
                         <div class="project-link">
@@ -1004,7 +1015,11 @@
                     <div class="project-content">
                         <span class="project-date">December 2019 - March 2020 (Personal Project)</span>
                         <h3 class="project-title">PocDoc - Pocket Doctor</h3>
-                        <p class="project-desc">Designed an AI-driven Android app using tensorflow lite to make healthcare accessible on the go. Features include a virtual medical assistant, disease prediction from blood test inputs, hospital locator, smart health alerts, and emergency support. Aims to empower users with instant, intelligent medical guidance, preventive care, and real-time doctor connectivity anytime, anywhere powered by quickblox API. </p>
+                        <p class="project-desc">Designed an AI-driven Android app using tensorflow lite to make
+                            healthcare accessible on the go. Features include a virtual medical assistant, disease
+                            prediction from blood test inputs, hospital locator, smart health alerts, and emergency
+                            support. Aims to empower users with instant, intelligent medical guidance, preventive care,
+                            and real-time doctor connectivity anytime, anywhere powered by quickblox API. </p>
                         <div class="project-link">
                             <a href="https://github.com/Navein19/PocDoc" class="btn-small">GitHub</a>
                         </div>
@@ -1018,7 +1033,12 @@
                     <div class="project-content">
                         <span class="project-date"> March 2019 (RAMCO Hackathon)</span>
                         <h3 class="project-title">ShoppingEasy</h3>
-                        <p class="project-desc">Designed a location-aware retail app that streamlines customer journeys via smart notifications, QR-based store check-ins, and contactless payments. Enabled vendor onboarding and real-time personalization. Integrated BigQuery for analytics and Airflow for ETL automation. Reduced checkout friction and wait times, offering a seamless experience from entry to exit through intelligent automation and customer-vendor interface integration.</p>
+                        <p class="project-desc">Designed a location-aware retail app that streamlines customer journeys
+                            via smart notifications, QR-based store check-ins, and contactless payments. Enabled vendor
+                            onboarding and real-time personalization. Integrated BigQuery for analytics and Airflow for
+                            ETL automation. Reduced checkout friction and wait times, offering a seamless experience
+                            from entry to exit through intelligent automation and customer-vendor interface integration.
+                        </p>
                         <div class="project-link">
                             <a href="https://github.com/Navein19/ShoppingEasy" class="btn-small">GitHub</a>
                         </div>
@@ -1078,8 +1098,6 @@
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
-                <a href="#resume">Resume</a>
-                <a href="#contact">Contact</a>
             </div>
             <p class="footer-text">© 2025 Navein Kumar Sridhar. All Rights Reserved.</p>
         </div>
@@ -1104,6 +1122,45 @@
         window.onclick = function (event) {
             if (event.target === modal) {
                 modal.style.display = "none";
+            }
+        };
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const modal = document.getElementById("resumeModal");
+        const closeBtn = document.querySelector(".close");
+        const navLink = document.getElementById("resumeNavLink");
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.getElementById("navLinks");
+
+        navLink.onclick = function (e) {
+            e.preventDefault();
+            modal.style.display = "block";
+        };
+
+        closeBtn.onclick = function () {
+            modal.style.display = "none";
+        };
+
+        window.onclick = function (event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        };
+
+        // Toggle the mobile navigation menu
+        hamburger.onclick = function () {
+            if (navLinks.style.display === "block") {
+                navLinks.style.display = "none";
+            } else {
+                navLinks.style.display = "block";
+                navLinks.style.flexDirection = "column";  // make links vertical
+                navLinks.style.position = "absolute";
+                navLinks.style.top = "70px";              // adjust based on header height
+                navLinks.style.right = "20px";
+                navLinks.style.backgroundColor = "#fff";
+                navLinks.style.padding = "10px";
+                navLinks.style.boxShadow = "0 2px 10px rgba(0,0,0,0.1)";
             }
         };
     });
